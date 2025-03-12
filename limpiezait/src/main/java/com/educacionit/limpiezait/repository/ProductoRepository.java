@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Optional;
 
 public class ProductoRepository implements IProductoRepository {
-    private final List<Producto> personas = new ArrayList<>();
+    private final List<Producto> productos = new ArrayList<>();
 
     @Override
     public List<Producto> findAll() {
