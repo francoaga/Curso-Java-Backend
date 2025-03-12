@@ -1,4 +1,6 @@
 package com.educacionit.limpiezait.repository.interfaces;
 
-public class IProductoRepository {
+import com.educacionit.limpiezait.model.Producto;
+
+public interface IProductoRepository extends IRepository<Producto, Long> {
 }
