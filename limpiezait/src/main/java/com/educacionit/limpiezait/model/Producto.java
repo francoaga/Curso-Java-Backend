@@ -1,6 +1,5 @@
 package com.educacionit.limpiezait.model;
 
-import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -8,7 +7,6 @@ import lombok.Setter;
 @Setter
 public class Producto {
     private static long idContador = 1;
-    @Setter(AccessLevel.NONE)
     private Long id;
     private String nombre;
     private Double precio;
