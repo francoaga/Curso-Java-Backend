@@ -1,0 +1,14 @@
+[
+  {
+    "nombre": "Escoba",
+    "precio": 500.0,
+    "descripcion": "Escoba de alta calidad",
+    "urlFoto": "assets/images/escoba.jpg"
+  },
+  {
+    "nombre": "Trapeador",
+    "precio": 450.0,
+    "descripcion": "Trapeador para pisos",
+    "urlFoto": "assets/images/trapeador.jpg"
+  }
+]
