@@ -15,6 +15,11 @@ public class Producto {
     private String descripcion;
     private String urlFoto;
 
+    // Constructor sin argumentos (necesario para Jackson)
+    private Producto() {
+        this.id = idContador++;
+    }
+
     private Producto(Long id, String nombre, Double precio, String descripcion, String urlFoto) {
         this.id = id;
         this.nombre = nombre;
