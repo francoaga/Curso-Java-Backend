@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 @Repository
 public class ProductoRepository implements IProductoRepository {
@@ -50,5 +51,12 @@ public class ProductoRepository implements IProductoRepository {
     @Override
     public void delete(Long id) {
         this.productos.removeIf(producto -> Objects.equals(producto.getId(), id));
+    }
+
+    @Override
+    public List<Producto> findByNombreContainingIgnoreCase(String nombre) {
+        return this.productos.stream()
+                .filter(p -> p.getNombre().toLowerCase().contains(nombre.toLowerCase()))
+                .collect(Collectors.toList());
     }
 }
