@@ -10,5 +10,53 @@
     "precio": 450.0,
     "descripcion": "Trapeador para pisos",
     "urlFoto": "assets/images/trapeador.jpg"
+  },
+  {
+    "nombre": "Jabón líquido",
+    "precio": 250.0,
+    "descripcion": "Jabón desengrasante multiusos",
+    "urlFoto": "assets/images/jabon_liquido.jpg"
+  },
+  {
+    "nombre": "Cubeta",
+    "precio": 300.0,
+    "descripcion": "Cubeta plástica de 10 litros",
+    "urlFoto": "assets/images/cubeta.jpg"
+  },
+  {
+    "nombre": "Guantes de limpieza",
+    "precio": 150.0,
+    "descripcion": "Guantes resistentes a químicos",
+    "urlFoto": "assets/images/guantes.jpg"
+  },
+  {
+    "nombre": "Desinfectante",
+    "precio": 350.0,
+    "descripcion": "Desinfectante de superficies",
+    "urlFoto": "assets/images/desinfectante.jpg"
+  },
+  {
+    "nombre": "Cepillo para baño",
+    "precio": 200.0,
+    "descripcion": "Cepillo con mango ergonómico",
+    "urlFoto": "assets/images/cepillo.jpg"
+  },
+  {
+    "nombre": "Franela",
+    "precio": 120.0,
+    "descripcion": "Paño de microfibra para limpieza",
+    "urlFoto": "assets/images/franela.jpg"
+  },
+  {
+    "nombre": "Aspiradora",
+    "precio": 2500.0,
+    "descripcion": "Aspiradora de 1000W",
+    "urlFoto": "assets/images/aspiradora.jpg"
+  },
+  {
+    "nombre": "Detergente",
+    "precio": 180.0,
+    "descripcion": "Detergente en polvo 1kg",
+    "urlFoto": "assets/images/detergente.jpg"
   }
 ]
