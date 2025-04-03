@@ -59,4 +59,16 @@ public class ProductoService implements IProductoService {
         // Convierto el Producto editado a ProductoDTO
         return productoMapper.toDTO(productoExistente);
     }
+
+    @Override
+    public List<ProductoDTO> getByNombreContaining(String nombre) {
+        List<Producto> productos = this.productoRepository.findByNombreContainingIgnoreCase(nombre);
+
+        if(productos.isEmpty())
+            throw new NoSuchElementException(String.format("No se encontraron productos que contengan %s", nombre));
+
+        return productos.stream()
+                .map(productoMapper::toDTO)
+                .collect(Collectors.toList());
+    }
 }
