@@ -7,7 +7,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
+import java.util.Objects;
 
 @RestController
 @AllArgsConstructor
@@ -16,8 +16,12 @@ public class ProductoController {
     private final IProductoService productoService;
 
     @GetMapping
-    public List<ProductoDTO> getAllProductos() {
-        return productoService.getAll();
+    public ResponseEntity<?> getAllProductos(@RequestParam(required = false) String nombre) {
+
+        if(Objects.nonNull(nombre) && !nombre.isEmpty()) {
+            return new ResponseEntity<>(this.productoService.getByNombreContaining(nombre), HttpStatus.OK);
+        }
+        return new ResponseEntity<>(this.productoService.getAll(), HttpStatus.OK);
     }
 
     @GetMapping("/{id}")
